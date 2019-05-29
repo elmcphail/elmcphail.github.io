@@ -1,43 +1,532 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+body{
+    font-family: Nunito;
+    background-color: white;
+    color: #555;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+h1,h2,h3,h4,h5,h6{
+    font-family: open sans;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 16px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+a {
+    color: #555;
 }
 
-ul.posts li {
-    list-style: none;
+main{
+    margin: 100px 0px 0 0px;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    Height: 50px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgb(85, 85, 85, 0.3);
+    padding: 5px 0;
+    z-index: 1;
+}
+
+.logo-container{
+    width: 30%;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+
+.social-icon {
+    width: 20px;
+    float: right;
+}
+
+.nav-icons{
+    width: 35%;
+    padding-right: 20px;
+    padding-top: 18px;
+}
+
+nav{
+    width: 35%;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 16px;
+}
+
+nav ul li:first-child{
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+nav li {
+    padding: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: pink;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* logo*/
+    .logo {
+        max-height: 50px;
+    }
+    .logo-container{
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+    }
+    
+    /* social */
+    .nav-icons{
+        width: 20%;
+        right: 0;
+        position: absolute;
+        padding-top: 12px;
+        padding-right: 12px;
+        z-index: 4;
+    }
+
+    /* mobile menu */
+    
+    nav {
+    width: 100%;
+    z-index: 6;
+    
+    }
+
+    nav ul {
+    display: none;
+    box-shadow: 0px 8px 5px rgb(85, 85, 85, 0.2);
+    }
+
+    nav a {
+    padding: 14px 16px;
+    display: block;
+    background-color: white;
+    }
+    
+    nav li {
+    padding: 0;
+    }
+    
+    nav ul li:first-child {
+    padding: 0;
+    }
+    
+    nav .hamburger {
+    width: 30px;
+    height: 30px;
+    background-image: url(/images/icons/baseline-menu-24px.svg);
+    background-position: center;
+    background-size: 24px 24px;
+    padding: 0;
+    z-index: 5;
+    margin-top: 8px;
+    margin-left: 8px;
+    }
+    
+    
+
+    }
+
+
+/*projects*/
+
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+width: 1028px;
+margin: 0 auto;
+}
+
+.project{
+    text-align: center;
+    padding: 4.5%;
+    margin: 1%;
+    width: 22%;
+    min-height: 180px;
+    position: relative;
+}
+
+@media screen and (max-width: 1044px) {
+  .flex-container {
+    width: 100%;
+  }
+   .project{
+    padding: 4.5%;
+    margin: 1%;
+    width: 39%;
+    min-height: 180px;
+    position: relative;
+} 
+}
+
+@media screen and (max-width: 650px) {
+  .flex-container {
+    width: 100%;
+  }
+   .project{
+    padding: 4.5%;
+    margin: 1%;
+    width: 100%;
+    min-height: 180px;
+    position: relative;
+} 
+}
+
+
+/*project backgrounds*/
+
+#wns{
+    background-image:
+    url(/images/wns/wns_main_img.jpg);
+    background-size: cover;
+}
+
+#sharewear{
+    background-image:
+    url(/images/sharewear/sharewear_main_img.jpg);
+    background-size: cover;
+}
+
+#fall-in-love{
+    background-image:
+    url(/images/fall-in-love/Fall_in_love_main_img.jpg);
+    background-size: cover;
+}
+
+#stripecon{
+    background-image:
+    url(/images/stripecon/stripecon_main_image.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#beauty-for-good{
+    background-image:
+    url(/images/beauty-for-good/beauty_main_image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#m3{
+    background-image:
+    url(/images/m3/m3_main_image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#gtfo{
+    background-image:
+    url(/images/gtfo/gtfo_main_img.png);
+    background-size: cover;
+}
+
+#tesla{
+    background-image:
+    url(/images/tesla/tesla_mian_img.png);
+    background-size: cover;
+}
+
+#expose{
+    background-image:
+    url(/images/expose/expose_main_img.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#nourish{
+    background-image:
+    url(/images/nourish/nourish_main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#macs{
+    background-image:
+    url(/images/macs/macs_main.png);
+    background-size: cover;
+}
+
+#macs-17{
+    background-image:
+    url(/images/macs-17/macs17_main.jpg);
+    background-size: cover;
+}
+
+#em-designs{
+    background-image:
+    url(/images/em-designs/em-designs_main_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*project hovers*/
+
+@media screen and (min-width: 768px) {
+
+#wns:hover{
+      background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/wns/wns_main_img.jpg);
+    background-size: cover;
+}
+
+#sharewear:hover{
+      background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/sharewear/sharewear_main_img.jpg);
+    background-size: cover;
+}
+
+#fall-in-love:hover{
+    background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/fall-in-love/Fall_in_love_main_img.jpg);
+    background-size: cover;
+}
+
+#stripecon:hover{
+     background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/stripecon/stripecon_main_image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#beauty-for-good:hover{
+     background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/beauty-for-good/beauty_main_image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#m3:hover{
+     background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/m3/m3_main_image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#gtfo:hover{
+    background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/gtfo/gtfo_main_img.png);
+    background-size: cover;
+}
+
+#tesla:hover{
+   background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/tesla/tesla_mian_img.png);
+    background-size: cover;
+}
+
+#expose:hover{
+    background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/expose/expose_main_img.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#nourish:hover{
+    background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/nourish/nourish_main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#macs:hover{
+    background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/macs/macs_main.png);
+    background-size: cover;
+}
+
+#macs-17:hover{
+    background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/macs-17/macs17_main.jpg);
+    background-size: cover;
+}
+
+#em-designs:hover{
+    background-image: none;
+     background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(85, 85, 85, 0.75), 
+      rgba(85, 85, 85, 0.75)
+    ),
+    /* bottom, image */
+    url(/images/em-designs/em-designs_main_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+}
+
+
+/*project a*/
+
+.project a {
+    text-decoration: none;
+    visibility: hidden;
+        padding: 0 40px;
+    text-decoration: none;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-0%, -50%);
+}
+    
+    .project:hover a{
+    visibility: visible;
+}
+
+
+
+.project h2{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.project p{
+    text-decoration: none;
+    margin: 10px 0 0 0;
+    color: #f1f1f1;
+}
+
+.project p:last-child{
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+.project a{
+    visibility: visible;
+    position: relative;
+    top: 200px;
+    transform: none;
+}
+    
+    .project h2{
+        color: #555;
+        text-decoration: underline;
+        font-size: 16px;
+    }
+    
+    .project p{
+        display: none;
+    }
+    
+    .project{
+        margin-bottom: 80px;
+        height:180px;
+    }
 }

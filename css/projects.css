@@ -1,0 +1,197 @@
+.back-button{
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    border: none;
+    box-shadow: none;
+    border-radius: 50px;
+    background-image: url(/images/icons/baseline-arrow_back-24px.svg);
+    background-position: center;
+    background-size: 24px 24px;
+    cursor: pointer;
+}
+
+/*title*/
+
+.title{
+margin: 120px auto 60px;  
+width: 700px;
+    
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #555;
+}
+
+.title p{
+    margin: 8px 0 0;
+    font-weight: 300;
+    font-size: 18px;
+    
+}
+
+/*main*/
+
+main{
+margin-left:  20px;
+margin-right: 20px;
+margin-bottom: 40px;
+}
+
+main{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.default-img, iframe{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.text-container{
+    margin: 40px 0;
+    width: 700px;
+}
+
+main p{
+    margin: 0 auto 40px;
+}
+
+main h3{
+    color: #777;
+    font-weight: 300;
+    margin: 20px auto 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+}
+
+#below-issuu{
+    padding-top: 60px;
+}
+
+
+/*h2*/
+
+main h2{
+    line-height: 1.25;
+    color: #a9a9a9;
+    margin: 40px auto 40px;
+}
+
+#wns-h2{
+    color: #003B5C;
+}
+
+#sharewear-h2:last-of-type{
+    color: #FF8C7A;
+}
+
+#fall-in-love-h2:first-of-type{
+    color: #9e9696;
+}
+
+#fall-in-love-h2:last-of-type{
+    color: #a68d92;
+}
+
+#beauty-for-good-h2{
+color: #e0bbb2;
+}
+
+#m3-h2{
+color: #FF1212;
+}
+
+#gtfo-h2{
+    color: #4e859f;
+}
+
+#expose-h2{
+    color: #92b8c9;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 816px) {
+    .title{
+    width: 90%;
+    margin: 120px auto 30px;  
+        
+    }
+    
+    main{
+    width: 90%;
+    }
+    
+    .text-container{
+    margin: 20px 0;
+    width: 90%;
+}
+    
+    .back-button{
+        position: absolute;
+    }
+    
+    main h2{
+    margin: 30px auto;
+}
+    
+    iframe{
+        max-height: 400px;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    iframe{
+        max-height: 345px;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+    iframe{
+        max-height: 290px;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    iframe{
+        max-height: 240px;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+    iframe{
+        max-height: 180px;
+        margin: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
