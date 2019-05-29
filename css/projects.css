@@ -55,7 +55,7 @@ main{
 }
 
 .text-container{
-    margin: 40px 0;
+    margin: 40px auto;
     width: 700px;
 }
 
@@ -132,7 +132,7 @@ color: #FF1212;
     }
     
     .text-container{
-    margin: 20px 0;
+    margin: 20px auto;
     width: 90%;
 }
     
